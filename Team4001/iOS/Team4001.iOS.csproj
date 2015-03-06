@@ -173,5 +173,13 @@
     <BundleResource Include="..\..\Pictures\Team4001WithRobot.png">
       <Link>Resources\Team4001WithRobot.png</Link>
     </BundleResource>
+    <BundleResource Include="Resources\IMG_20150305_105500.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_105758.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_105810.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_111340.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_111349.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_115620.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_120103.jpg" />
+    <BundleResource Include="Resources\IMG_20150305_120126.jpg" />
   </ItemGroup>
 </Project>
