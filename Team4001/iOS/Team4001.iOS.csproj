@@ -186,5 +186,29 @@
     <BundleResource Include="Resources\RobotRender3.png" />
     <BundleResource Include="Resources\RobotRender4.png" />
     <BundleResource Include="Resources\RobotRender5.png" />
+    <BundleResource Include="..\..\Pictures\Rebound_BandW.jpg">
+      <Link>Resources\Rebound_BandW.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\college1.png">
+      <Link>Resources\college1.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\lifebuoy2.png">
+      <Link>Resources\lifebuoy2.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\newspaper20.png">
+      <Link>Resources\newspaper20.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\small164.png">
+      <Link>Resources\small164.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\tree58.png">
+      <Link>Resources\tree58.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\tree83.png">
+      <Link>Resources\tree83.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\tree93.png">
+      <Link>Resources\tree93.png</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>

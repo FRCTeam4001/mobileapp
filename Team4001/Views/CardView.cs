@@ -26,7 +26,14 @@ namespace Team4001
                 var layout = new StackLayout();
 
                 foreach (var view in views)
-                    layout.Children.Add(view); 
+                {
+                    if (Type.Equals(view.GetType(), typeof(ListView)))
+                    {
+                        var items = ((ListView)(view)).ItemsSource.OfType<Team4001.TeamPage.Achievement>().Count();
+                        view.HeightRequest = 45*items;
+                    }
+                    layout.Children.Add(view);
+                }
 
                 Content = layout; 
             }
