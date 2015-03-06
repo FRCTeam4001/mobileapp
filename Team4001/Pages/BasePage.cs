@@ -15,9 +15,11 @@ namespace Team4001
 {
     public class BasePage : ContentPage
     {
-        public BasePage() : base()
+        public BasePage()
+            : base()
         {
             BackgroundColor = App.Colours.Background; 
+            Padding = 10.0f; 
         }
     }
 }

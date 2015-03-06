@@ -1,4 +1,12 @@
-﻿using System.Reflection;
+﻿//
+// AssemblyInfo.cs
+//
+// Author:
+//       Safwan Choudhury <safwan.choudhury@quanser.com>
+//
+// Copyright (c) 2015 Quanser Inc.
+
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 // Information about this assembly is defined by the following attributes.

@@ -15,18 +15,16 @@ namespace Team4001
 {
     public class MediaPage : BasePage
     {
-        public MediaPage() : base()
+        private static readonly string TOTES_VIDEO = "https://vimeo.com/121322118";
+
+        public MediaPage()
+            : base()
         {
             Title = "Media"; 
             Icon = "MediaIcon.png"; 
 
-            Content = new StackLayout
-            { 
-                Children =
-                {
-                    new Label { Text = String.Empty }
-                }
-            };
+            Content = new WebView { Source = TOTES_VIDEO };
+
         }
     }
 }

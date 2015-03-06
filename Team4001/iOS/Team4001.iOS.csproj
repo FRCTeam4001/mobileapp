@@ -34,6 +34,9 @@
     <MtouchArch>i386</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +53,8 @@
     <MtouchDebug>true</MtouchDebug>
     <MtouchI18n>
     </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -165,5 +170,8 @@
     <BundleResource Include="Resources\TeamIcon%402x.png" />
     <BundleResource Include="Resources\TeamIcon%403x.png" />
     <BundleResource Include="Resources\LaunchImage.png" />
+    <BundleResource Include="..\..\Pictures\Team4001WithRobot.png">
+      <Link>Resources\Team4001WithRobot.png</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>

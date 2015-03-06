@@ -1,4 +1,12 @@
-﻿using System;
+﻿//
+// MainActivity.cs
+//
+// Author:
+//       Safwan Choudhury <safwan.choudhury@quanser.com>
+//
+// Copyright (c) 2015 Quanser Inc.
+
+using System;
 
 using Android.App;
 using Android.Content;
@@ -10,7 +18,7 @@ using Android.OS;
 
 namespace Team4001.Droid
 {
-    [Activity(Label = "Team 4001", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Retro Rams", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)

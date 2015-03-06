@@ -15,17 +15,26 @@ namespace Team4001
 {
     public class TeamPage : BasePage
     {
-        public TeamPage() : base()
+        public TeamPage()
+            : base()
         {
             Title = "Team"; 
             Icon = "TeamIcon.png";
 
-            Content = new StackLayout
+            Content = new ScrollView
             { 
-                Children =
+                Content = new StackLayout
                 {
-                            new Label { Text = String.Empty }
+                    Children =
+                    {
+                        new CardView(
+                            new HeadingView("Heading"),
+                            new ImageView("Team4001WithRobot.png"),
+                            new ParagraphView("Some paragraph text. \n - Point 1 \n - Point 2")
+                        )
+                    }
                 }
+
             };
         }
     }

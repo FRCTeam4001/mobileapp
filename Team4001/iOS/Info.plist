@@ -22,6 +22,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -34,13 +36,13 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.FRC.Team4001</string>
-	<key>CFBundleDisplayName</key>
-	<string>Team 4001</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
+	<key>CFBundleDisplayName</key>
+	<string>Retro Rams</string>
 </dict>
 </plist>
