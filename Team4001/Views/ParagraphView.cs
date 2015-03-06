@@ -16,6 +16,7 @@ namespace Team4001
         public ParagraphView(string Text)
         {
             this.Text = Text; 
+            this.HorizontalOptions = LayoutOptions.FillAndExpand;
         }
     }
 }

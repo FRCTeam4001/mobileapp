@@ -181,5 +181,10 @@
     <BundleResource Include="Resources\IMG_20150305_115620.jpg" />
     <BundleResource Include="Resources\IMG_20150305_120103.jpg" />
     <BundleResource Include="Resources\IMG_20150305_120126.jpg" />
+    <BundleResource Include="Resources\RobotRender1.png" />
+    <BundleResource Include="Resources\RobotRender2.png" />
+    <BundleResource Include="Resources\RobotRender3.png" />
+    <BundleResource Include="Resources\RobotRender4.png" />
+    <BundleResource Include="Resources\RobotRender5.png" />
   </ItemGroup>
 </Project>
