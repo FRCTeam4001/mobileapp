@@ -8,9 +8,9 @@
 //
 //
 using System;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
-using System.Collections.Generic;
 
 namespace Team4001
 {
@@ -53,11 +53,11 @@ namespace Team4001
 
             ListView achievelist = new ListView{ ItemsSource = achievements, ItemTemplate = cell };
             ListView stemlist = new ListView{ ItemsSource = stemStats, ItemTemplate = cell };
-            achievelist.ItemSelected += async (sender, e) => {
+            achievelist.ItemSelected += async (sender, e) =>
+            {
                 Achievement target = ((Achievement)(e.SelectedItem));
                 if (target.Highlight != null)
                 {
-                    //await DisplayAlert("Tapped!", target.Highlight + " was tapped.", "OK");
                     image2015.Source = target.Highlight;
                 }
             };
@@ -69,22 +69,27 @@ namespace Team4001
                     Children =
                     {
                         new CardView(
+                            new ImageView("Rebound_BandW.jpg"),
+                            new ParagraphView("FIRST Robotics Team 4001 is from St. Robert Catholic School in Thornhill, ON, Canada. As a four-year old FRC team, we've accomplished and grown a lot in terms of our technical capabilities of buildilng a robot and our community outreach.")
+                        ),
+
+                        new CardView(
                             new HeadingView("2015 Season"),
                             image2015
                         ),
+
                         new CardView(
                             achievelist
                         ),
+
                         new CardView(
                             new HeadingView("STEM Stats"),
                             new ImageView("IMG_20150305_105500.png"),
-                            new ParagraphView("St. Robert CHS sends on average 85% of graduating students to a University program.")),
+                            new ParagraphView("St. Robert CHS sends on average 85% of graduating students to a University program.")
+                        ),
+                                    
                         new CardView(
                             stemlist
-                        ),
-                        new CardView(
-                            new ImageView("Rebound_BandW.jpg"),
-                            new ParagraphView("FIRST Robotics Team 4001 is from St. Robert Catholic School in Thornhill, ON, Canada. As a four-year old FRC team, we've accomplished and grown a lot in terms of our technical capabilities of buildilng a robot and our community outreach.")
                         ),
                     }
                 }
@@ -116,7 +121,7 @@ namespace Team4001
 
             public string Image { private set; get; }
 
-            public string Highlight {private set; get; }
+            public string Highlight { private set; get; }
         };
     }
 }
