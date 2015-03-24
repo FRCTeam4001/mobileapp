@@ -202,28 +202,28 @@
     <BundleResource Include="..\..\Pictures\tree93.png">
       <Link>Resources\tree93.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_105500.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_105500.png">
       <Link>Resources\IMG_20150305_105500.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_105758.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_105758.png">
       <Link>Resources\IMG_20150305_105758.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_105810.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_105810.png">
       <Link>Resources\IMG_20150305_105810.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_111340.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_111340.png">
       <Link>Resources\IMG_20150305_111340.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_111349.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_111349.png">
       <Link>Resources\IMG_20150305_111349.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_115620.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_115620.png">
       <Link>Resources\IMG_20150305_115620.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_120103.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_120103.png">
       <Link>Resources\IMG_20150305_120103.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_120126.png">
+    <BundleResource Include="..\..\Pictures\IMG_20150305_120126.png">
       <Link>Resources\IMG_20150305_120126.png</Link>
     </BundleResource>
   </ItemGroup>

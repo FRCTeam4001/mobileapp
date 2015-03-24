@@ -22,9 +22,11 @@ namespace Team4001
             Title = "Team"; 
             Icon = "TeamIcon.png";
 
+            ImageView image2015 = new ImageView("IMG_20150305_111349.png");
+
             List<Achievement> achievements = new List<Achievement>
             {
-                new Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png"),
+                new Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png", "IMG_20150305_105758"),
                 new Achievement("FLL Support", "Hosted the FLL York Region Qualifier (2nd Year) with 26 teams and 80 student volunteers", "lifebuoy2.png"),
                 new Achievement("FLL Promotion", "Liberal Newspaper Coverage of the event", "newspaper20.png"),
                 new Achievement("FLL Team Support", "Started FLL team at Silverstream school", "lifebuoy2.png"),
@@ -49,6 +51,17 @@ namespace Team4001
             cell.SetBinding(TextCell.DetailProperty, "Details");
             cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
 
+            ListView achievelist = new ListView{ ItemsSource = achievements, ItemTemplate = cell };
+            ListView stemlist = new ListView{ ItemsSource = stemStats, ItemTemplate = cell };
+            achievelist.ItemSelected += async (sender, e) => {
+                Achievement target = ((Achievement)(e.SelectedItem));
+                if (target.Highlight != null)
+                {
+                    //await DisplayAlert("Tapped!", target.Highlight + " was tapped.", "OK");
+                    image2015.Source = target.Highlight;
+                }
+            };
+
             Content = new ScrollView
             { 
                 Content = new StackLayout
@@ -57,17 +70,17 @@ namespace Team4001
                     {
                         new CardView(
                             new HeadingView("2015 Season"),
-                            new ImageView("IMG_20150305_111349.png")
+                            image2015
                         ),
                         new CardView(
-                            new ListView{ ItemsSource = achievements, ItemTemplate = cell,  }
+                            achievelist
                         ),
                         new CardView(
                             new HeadingView("STEM Stats"),
                             new ImageView("IMG_20150305_105500.png"),
                             new ParagraphView("St. Robert CHS sends on average 85% of graduating students to a University program.")),
                         new CardView(
-                            new ListView{ ItemsSource = stemStats, ItemTemplate = cell,  }
+                            stemlist
                         ),
                         new CardView(
                             new ImageView("Rebound_BandW.jpg"),
@@ -86,6 +99,15 @@ namespace Team4001
                 this.Title = title;
                 this.Details = details;
                 this.Image = image;
+                this.Highlight = null;
+            }
+
+            public Achievement(string title, string details, string image, string highlight)
+            {
+                this.Title = title;
+                this.Details = details;
+                this.Image = image;
+                this.Highlight = highlight;
             }
 
             public string Title { private set; get; }
@@ -93,6 +115,8 @@ namespace Team4001
             public string Details { private set; get; }
 
             public string Image { private set; get; }
+
+            public string Highlight {private set; get; }
         };
     }
 }
