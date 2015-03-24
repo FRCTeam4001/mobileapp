@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <style name="Team4001Theme" parent="android:Theme.Material.Light">
+	    <item name="android:colorAccent">#FFFFFF</item>
+    	<item name="android:colorPrimary">#FF9600</item>
+    	<item name="android:colorPrimaryDark">#EF8D00</item>
+    	<item name="android:textColorPrimary">#FFFFFF</item>
+    	<item name="android:navigationBarColor">#EF8D00</item>
+    </style>
+</resources>

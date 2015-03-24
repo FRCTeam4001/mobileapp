@@ -46,16 +46,16 @@
       <HintPath>..\..\..\..\Freelance\Team4001\Team4001\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform.Android">
-      <HintPath>..\..\..\..\Freelance\Team4001\Team4001\packages\Xamarin.Forms.1.3.5.6337\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
     </Reference>
     <Reference Include="FormsViewGroup">
-      <HintPath>..\..\..\..\Freelance\Team4001\Team4001\packages\Xamarin.Forms.1.3.5.6337\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\..\..\..\Freelance\Team4001\Team4001\packages\Xamarin.Forms.1.3.5.6337\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\..\..\..\Freelance\Team4001\Team4001\packages\Xamarin.Forms.1.3.5.6337\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -79,7 +79,82 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\college1.png">
+      <Link>Resources\drawable-hdpi\college1.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\lifebuoy2.png">
+      <Link>Resources\drawable-hdpi\lifebuoy2.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\newspaper20.png">
+      <Link>Resources\drawable-hdpi\newspaper20.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\Rebound_BandW.jpg">
+      <Link>Resources\drawable-hdpi\Rebound_BandW.jpg</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\RobotRender1.png">
+      <Link>Resources\drawable-hdpi\RobotRender1.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\RobotRender2.png">
+      <Link>Resources\drawable-hdpi\RobotRender2.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\RobotRender3.png">
+      <Link>Resources\drawable-hdpi\RobotRender3.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\RobotRender4.png">
+      <Link>Resources\drawable-hdpi\RobotRender4.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\RobotRender5.png">
+      <Link>Resources\drawable-hdpi\RobotRender5.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\small164.png">
+      <Link>Resources\drawable-hdpi\small164.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\Team4001App.png">
+      <Link>Resources\drawable-hdpi\Team4001App.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\Team4001WithRobot.png">
+      <Link>Resources\drawable-hdpi\Team4001WithRobot.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\tree58.png">
+      <Link>Resources\drawable-hdpi\tree58.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\tree83.png">
+      <Link>Resources\drawable-hdpi\tree83.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\tree93.png">
+      <Link>Resources\drawable-hdpi\tree93.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_105500.png">
+      <Link>Resources\drawable\IMG_20150305_105500.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_105758.png">
+      <Link>Resources\drawable\IMG_20150305_105758.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_105810.png">
+      <Link>Resources\drawable\IMG_20150305_105810.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_111340.png">
+      <Link>Resources\drawable\IMG_20150305_111340.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_111349.png">
+      <Link>Resources\drawable\IMG_20150305_111349.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_115620.png">
+      <Link>Resources\drawable\IMG_20150305_115620.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_120103.png">
+      <Link>Resources\drawable\IMG_20150305_120103.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\..\..\..\Freelance\Team4001\Pictures\IMG_20150305_120126.png">
+      <Link>Resources\drawable\IMG_20150305_120126.png</Link>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Forms.1.3.5.6337\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.5.6337\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.0.6341\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.0.6341\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <Folder Include="Resources\values\" />
+    <Folder Include="Resources\values-v21\" />
+  </ItemGroup>
 </Project>

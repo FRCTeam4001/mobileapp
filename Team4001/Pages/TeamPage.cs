@@ -37,10 +37,10 @@ namespace Team4001
 
             List<Achievement> stemStats = new List<Achievement>
             {
-                    new Achievement("2011 - No FRC Team", "117 of 308 graduates enter STEM programs (38%)", "tree83.png"),
-                    new Achievement("2012 - Year One", "133 of 297 graduates enter STEM programs (45%) and 100% of Team 4001 members", "tree58.png"),
-                    new Achievement("2013 - Year Two", "152 of 285 graduates enter STEM programs (53%) and 78% of Team 4001", "tree93.png"),
-                    new Achievement("2014 - Year Three", "158 of 331 graduates enter STEM programs (47%) and 82% of Team 4001", "small164.png"),
+                new Achievement("2011 - No FRC Team", "117 of 308 graduates enter STEM programs (38%)", "tree83.png"),
+                new Achievement("2012 - Year One", "133 of 297 graduates enter STEM programs (45%) and 100% of Team 4001 members", "tree58.png"),
+                new Achievement("2013 - Year Two", "152 of 285 graduates enter STEM programs (53%) and 78% of Team 4001", "tree93.png"),
+                new Achievement("2014 - Year Three", "158 of 331 graduates enter STEM programs (47%) and 82% of Team 4001", "small164.png"),
             };
 
             var cell = new DataTemplate(typeof(ImageCell));
@@ -57,15 +57,15 @@ namespace Team4001
                     {
                         new CardView(
                             new HeadingView("2015 Season"),
-                            new ImageView("IMG_20150305_111349.jpg")
+                            new ImageView("IMG_20150305_111349.png")
                         ),
                         new CardView(
                             new ListView{ ItemsSource = achievements, ItemTemplate = cell,  }
                         ),
                         new CardView(
                             new HeadingView("STEM Stats"),
-                            new ImageView("IMG_20150305_105500.jpg"),
-                            new ParagraphView("St. Robert CHS sends on average 85% of graduating students to a University program.")                        ),
+                            new ImageView("IMG_20150305_105500.png"),
+                            new ParagraphView("St. Robert CHS sends on average 85% of graduating students to a University program.")),
                         new CardView(
                             new ListView{ ItemsSource = stemStats, ItemTemplate = cell,  }
                         ),

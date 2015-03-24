@@ -8,7 +8,7 @@
 //
 //
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 
 using Xamarin.Forms;
 
@@ -23,17 +23,33 @@ namespace Team4001
 
         public static class Colours
         {
-            public static Color Brand = Color.FromHex("FF9600"); 
-            public static Color Background = Color.FromHex("E2E2E2"); 
+            public static Color Brand = Color.FromHex("FF9600");
+            public static Color BrandDark = Color.FromHex("EF8D00");
+            public static Color Background = Color.FromHex("E2E2E2");
         }
     }
 
     public class RootPage : NavigationPage
     {
-        public RootPage() : base(new DetailPage())
+        public RootPage()
+            : base(new DetailPage())
         {
             BarTextColor = Color.White; 
-            BarBackgroundColor = App.Colours.Brand; 
+
+            Device.OnPlatform(
+                
+                // iOS
+                () =>
+                {
+                    BarBackgroundColor = App.Colours.Brand;
+                }, 
+
+                // Android
+                () =>
+                {
+                    BarBackgroundColor = App.Colours.BrandDark;
+                }
+            );
         }
     }
 
@@ -41,7 +57,21 @@ namespace Team4001
     {
         public DetailPage()
         {
-            Title = "Team 4001: Retro Rams"; 
+            Device.OnPlatform(
+                
+                // iOS
+                () =>
+                {
+                    Title = "Team 4001: Retro Rams"; 
+                },
+
+                // Android
+                () =>
+                {
+                    Title = "Retro Rams"; 
+                }
+            );
+            
             BackgroundColor = App.Colours.Background; 
 
             Children.Add(new TeamPage()); 

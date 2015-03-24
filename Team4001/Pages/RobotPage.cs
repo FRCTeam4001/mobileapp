@@ -28,7 +28,7 @@ namespace Team4001
                     Children =
                     {
                         new CardView(
-                            new ImageView("IMG_20150305_120103.jpg"),
+                            new ImageView("IMG_20150305_120103.png"),
                             new ParagraphView("For this build season, we designed and built a robot to address a very specific strategy to maximimize the size of our tote stacks by maximizing our operational efficiency within a small region of the game field.")
                         ),
                         new CardView(
