@@ -239,6 +239,12 @@
     <BundleResource Include="..\..\Videos\Totes.mp4">
       <Link>Resources\Totes.mp4</Link>
     </BundleResource>
+    <BundleResource Include="..\..\Videos\LateOClockNews.mp4">
+      <Link>Resources\LateOClockNews.mp4</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Videos\RogersDaytime.mp4">
+      <Link>Resources\RogersDaytime.mp4</Link>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
