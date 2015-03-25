@@ -31,12 +31,25 @@ namespace Team4001.iOS
         {
             base.OnElementChanged(e);
 
-            var video = (VideoView)e.NewElement;
-            var a = video.Height / video.Width;                                      // height / width
-            var w = (float)(UIScreen.MainScreen.Bounds.Width) * WIDTH_PERCENTAGE;    // desired width
-            var h = w * a;                                                           // calculated height
+            var maxWidth = (float)(UIScreen.MainScreen.Bounds.Width) - 25.0f;
 
-            var player = new MPMoviePlayerController(NSUrl.CreateFileUrl(new [] { NSBundle.MainBundle.PathForResource("Totes", "mp4") }))
+            var video = (VideoView)e.NewElement;    
+
+            var a = video.Height / video.Width;     // height / width
+            var w = maxWidth * WIDTH_PERCENTAGE;    // desired widths
+            var h = w * a;                          // calculated height                           
+
+            Console.WriteLine(video.Filename);
+
+            var file = video.Filename.Split(new [] { '.' });
+
+            if (file.Length > 2)
+                throw new Exception(); // TODO
+            
+            var p = NSBundle.MainBundle.PathForResource(file[0], file[1]);
+            Console.WriteLine(p);
+
+            var player = new MPMoviePlayerController(NSUrl.CreateFileUrl(new [] { NSBundle.MainBundle.PathForResource(file[0], file[1]) }))
             {
                 ShouldAutoplay = false,
             };

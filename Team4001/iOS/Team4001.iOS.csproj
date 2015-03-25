@@ -229,6 +229,7 @@
     </BundleResource>
     <BundleResource Include="..\..\Videos\Totes.mp4">
       <Link>Resources\Totes.mp4</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
     <BundleResource Include="..\..\Pictures\Icons\man13.png">
       <Link>Resources\man13.png</Link>

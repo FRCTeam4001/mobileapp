@@ -31,7 +31,7 @@ namespace Team4001
                     {
                         new CardView(
                             new HeadingView("All About Them Totes"),
-                            new VideoView("Totes.mp4", 426.0f, 240.0f),
+                            new VideoView("Totes.mp4", 640.0f, 360.0f),
                             new ParagraphView("A video we created for the 2015 FIRST Robotics Challenge: Recycle Rush.")
                         ),
                     }
