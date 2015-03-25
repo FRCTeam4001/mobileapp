@@ -15,15 +15,24 @@ namespace Team4001
 {
     public class MediaPage : BasePage
     {
-        private static readonly string TOTES_VIDEO = "https://vimeo.com/121322118";
-
         public MediaPage()
             : base()
         {
             Title = "Media"; 
             Icon = "MediaIcon.png"; 
 
-            Content = new WebView { Source = TOTES_VIDEO };
+            Content = new ScrollView
+            { 
+                Content = new StackLayout
+                {
+                    Children =
+                    {
+                        new CardView(
+                            new VideoView("Totes.mp4", 426.0f, 240.0f) 
+                        ),
+                    }
+                }
+            };
 
         }
     }

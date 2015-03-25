@@ -41,9 +41,7 @@ namespace Team4001.iOS
                 ShouldAutoplay = false,
             };
             
-            player.PrepareToPlay();
-
-           
+            player.PrepareToPlay();           
 
             var view = new UIView(new RectangleF(0, 0, w, h));
 
