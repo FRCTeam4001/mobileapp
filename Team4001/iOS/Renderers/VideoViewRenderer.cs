@@ -36,22 +36,19 @@ namespace Team4001.iOS
             var video = (VideoView)e.NewElement;    
 
             var a = video.Height / video.Width;     // height / width
-            var w = maxWidth * WIDTH_PERCENTAGE;    // desired widths
-            var h = w * a;                          // calculated height                           
-
-            Console.WriteLine(video.Filename);
+            var w = maxWidth * WIDTH_PERCENTAGE;    // desired width
+            var h = w * a;                          // computed height
 
             var file = video.Filename.Split(new [] { '.' });
 
-            if (file.Length > 2)
-                throw new Exception(); // TODO
+            if (file.Length != 2)
+                throw new ArgumentException("Filename property set incorrectly.");
             
-            var p = NSBundle.MainBundle.PathForResource(file[0], file[1]);
-            Console.WriteLine(p);
+            var videoUrl = NSUrl.FromFilename(NSBundle.MainBundle.PathForResource(file[0], file[1]));
 
-            var player = new MPMoviePlayerController(NSUrl.CreateFileUrl(new [] { NSBundle.MainBundle.PathForResource(file[0], file[1]) }))
+            var player = new MPMoviePlayerController(videoUrl)
             {
-                ShouldAutoplay = false,
+                ShouldAutoplay = true,
             };
             
             player.PrepareToPlay();           

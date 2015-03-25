@@ -227,10 +227,6 @@
     <BundleResource Include="..\..\Pictures\IMG_20150305_120126.png">
       <Link>Resources\IMG_20150305_120126.png</Link>
     </BundleResource>
-    <BundleResource Include="..\..\Videos\Totes.mp4">
-      <Link>Resources\Totes.mp4</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </BundleResource>
     <BundleResource Include="..\..\Pictures\Icons\man13.png">
       <Link>Resources\man13.png</Link>
     </BundleResource>
@@ -239,6 +235,9 @@
     </BundleResource>
     <BundleResource Include="..\..\Pictures\Loading.jpg">
       <Link>Resources\Loading.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Videos\Totes.mp4">
+      <Link>Resources\Totes.mp4</Link>
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
