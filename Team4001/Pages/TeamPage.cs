@@ -23,26 +23,28 @@ namespace Team4001
             Icon = "TeamIcon.png";
 
             ImageView image2015 = new ImageView("IMG_20150305_111349.png");
+            ImageView imageSTEM = new ImageView("IMG_20150305_105500.png");
+
 
             List<Achievement> achievements = new List<Achievement>
             {
-                new Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png", "IMG_20150305_105758"),
-                new Achievement("FLL Support", "Hosted the FLL York Region Qualifier (2nd Year) with 26 teams and 80 student volunteers", "lifebuoy2.png"),
-                new Achievement("FLL Promotion", "Liberal Newspaper Coverage of the event", "newspaper20.png"),
-                new Achievement("FLL Team Support", "Started FLL team at Silverstream school", "lifebuoy2.png"),
-                new Achievement("Regional FRC Walk-In Clinic", "Hosted a regional robot clinic for rookie and second year teams (188, 5596, 5598, 4807 and 5158)", "lifebuoy2.png"),
-                new Achievement("FRC Team Support", "Assisted 5598 and 4807 in LabVIEW programming best practices", "lifebuoy2.png"),
-                new Achievement("FRC Kickoff Event", "Coordinated a kickoff event with guest speakers and tutorials", "lifebuoy2.png"),
-                new Achievement("Co-op Placement", "Team members honed their skills as interns at sponsor company", "college1.png"),
-                new Achievement("Media Exposure", "Appeared on Rogers Daytime television, and Comedy Network's The Late O Clock News to promote STEM", "newspaper20.png"),
+                new Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png", "LEGOTruck.jpg"),
+                new Achievement("FLL Support", "Hosted the FLL York Region Qualifier (2nd Year) with 26 teams and 80 student volunteers", "lifebuoy2.png", "FLLwithHats.jpg"),
+                new Achievement("FLL Promotion", "Liberal Newspaper Coverage of the event", "newspaper20.png", "FLLLaptop.jpg"),
+                new Achievement("FLL Team Support", "Started FLL team at Silverstream school", "lifebuoy2.png", "FLLTeam.jpg"),
+                    new Achievement("Regional FRC Walk-In Clinic", "Hosted a regional robot clinic for rookie and second year teams (188, 5596, 5598, 4807 and 5158)", "lifebuoy2.png", "FRCClinic.jpg"),
+                new Achievement("FRC Team Support", "Assisted 5598 and 4807 in LabVIEW programming best practices", "lifebuoy2.png", "LV.jpg"),
+                new Achievement("FRC Kickoff Event", "Coordinated a kickoff event with guest speakers and tutorials", "lifebuoy2.png", "Kickoff.jpg"),
+                new Achievement("Co-op Placement", "Team members honed their skills as interns at sponsor company", "college1.png", "Quanser.png"),
+                new Achievement("Media Exposure", "Appeared on Rogers Daytime television, and Comedy Network's The Late O Clock News to promote STEM", "newspaper20.png", "TVShow.jpg"),
             };
 
             List<Achievement> stemStats = new List<Achievement>
             {
-                new Achievement("2011 - No FRC Team", "117 of 308 graduates enter STEM programs (38%)", "tree83.png"),
-                new Achievement("2012 - Year One", "133 of 297 graduates enter STEM programs (45%) and 100% of Team 4001 members", "tree58.png"),
-                new Achievement("2013 - Year Two", "152 of 285 graduates enter STEM programs (53%) and 78% of Team 4001", "tree93.png"),
-                new Achievement("2014 - Year Three", "158 of 331 graduates enter STEM programs (47%) and 82% of Team 4001", "small164.png"),
+                new Achievement("2011 - No FRC Team", "117 of 308 graduates enter STEM programs (38%)", "tree83.png", "Design.jpg"),
+                new Achievement("2012 - Year One", "133 of 297 graduates enter STEM programs (45%) and 100% of Team 4001 members", "tree58.png", "Building.jpg"),
+                new Achievement("2013 - Year Two", "152 of 285 graduates enter STEM programs (53%) and 78% of Team 4001", "tree93.png", "First2Years.jpg"),
+                new Achievement("2014 - Year Three", "158 of 331 graduates enter STEM programs (47%) and 82% of Team 4001", "small164.png", "Team2015.jpg"),
             };
 
             var cell = new DataTemplate(typeof(ImageCell));
@@ -53,6 +55,7 @@ namespace Team4001
 
             ListView achievelist = new ListView{ ItemsSource = achievements, ItemTemplate = cell };
             ListView stemlist = new ListView{ ItemsSource = stemStats, ItemTemplate = cell };
+
             achievelist.ItemSelected += async (sender, e) =>
             {
                 Achievement target = ((Achievement)(e.SelectedItem));
@@ -61,6 +64,15 @@ namespace Team4001
                     image2015.Source = target.Highlight;
                 }
             };
+
+            stemlist.ItemSelected += async (sender, e) =>
+                {
+                    Achievement target = ((Achievement)(e.SelectedItem));
+                    if (target.Highlight != null)
+                    {
+                        imageSTEM.Source = target.Highlight;
+                    }
+                };
 
             Content = new ScrollView
             { 
@@ -84,7 +96,7 @@ namespace Team4001
 
                         new CardView(
                             new HeadingView("STEM Stats"),
-                            new ImageView("IMG_20150305_105500.png"),
+                            imageSTEM,
                             new ParagraphView("St. Robert CHS sends on average 85% of graduating students to a University program.")
                         ),
                                     

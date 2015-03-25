@@ -226,5 +226,44 @@
     <BundleResource Include="..\..\Pictures\IMG_20150305_120126.png">
       <Link>Resources\IMG_20150305_120126.png</Link>
     </BundleResource>
+    <BundleResource Include="..\..\Pictures\FLLwithHats.jpg">
+      <Link>Resources\FLLwithHats.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\LEGOTruck.jpg">
+      <Link>Resources\LEGOTruck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\FLLTeam.jpg">
+      <Link>Resources\FLLTeam.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\FLLLaptop.jpg">
+      <Link>Resources\FLLLaptop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\FRCClinic.jpg">
+      <Link>Resources\FRCClinic.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Kickoff.jpg">
+      <Link>Resources\Kickoff.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\LV.jpg">
+      <Link>Resources\LV.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\TVShow.jpg">
+      <Link>Resources\TVShow.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Quanser.png">
+      <Link>Resources\Quanser.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Building.jpg">
+      <Link>Resources\Building.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Design.jpg">
+      <Link>Resources\Design.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\First2Years.jpg">
+      <Link>Resources\First2Years.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Team2015.jpg">
+      <Link>Resources\Team2015.jpg</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>
