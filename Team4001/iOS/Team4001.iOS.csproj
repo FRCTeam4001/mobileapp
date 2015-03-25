@@ -245,6 +245,24 @@
     <BundleResource Include="..\..\Videos\RogersDaytime.mp4">
       <Link>Resources\RogersDaytime.mp4</Link>
     </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\car186.png">
+      <Link>Resources\car186.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\factory26.png">
+      <Link>Resources\factory26.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\garbage8.png">
+      <Link>Resources\garbage8.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\italian-food.png">
+      <Link>Resources\italian-food.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\joystick10.png">
+      <Link>Resources\joystick10.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\vehicle57.png">
+      <Link>Resources\vehicle57.png</Link>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
