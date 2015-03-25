@@ -23,12 +23,16 @@ namespace Team4001
 
             Content = new ScrollView
             { 
+                HorizontalOptions = LayoutOptions.Center,
+
                 Content = new StackLayout
                 {
                     Children =
                     {
                         new CardView(
-                            new VideoView("Totes.mp4", 426.0f, 240.0f) 
+                            new HeadingView("All About Them Totes"),
+                            new VideoView("Totes.mp4", 426.0f, 240.0f),
+                            new ParagraphView("A video we created for the 2015 FIRST Robotics Challenge: Recycle Rush.")
                         ),
                     }
                 }
