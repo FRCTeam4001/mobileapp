@@ -125,6 +125,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\VideoViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="ITunesArtwork%402x" />
@@ -226,6 +227,12 @@
     <BundleResource Include="..\..\Pictures\IMG_20150305_120126.png">
       <Link>Resources\IMG_20150305_120126.png</Link>
     </BundleResource>
+    <BundleResource Include="..\..\Videos\Totes.mp4">
+      <Link>Resources\Totes.mp4</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Renderers\" />
     <BundleResource Include="..\..\Pictures\FLLwithHats.jpg">
       <Link>Resources\FLLwithHats.jpg</Link>
     </BundleResource>
