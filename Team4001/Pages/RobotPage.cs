@@ -10,6 +10,7 @@
 using System;
 
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace Team4001
 {
@@ -21,6 +22,45 @@ namespace Team4001
             Title = "Robot";
             Icon = "RobotIcon.png"; 
 
+            ImageView elevateImage = new ImageView("IMG_20150305_120103.png");
+
+            List<Team4001.TeamPage.Achievement> elevator = new List<Team4001.TeamPage.Achievement>
+            {
+                new Team4001.TeamPage.Achievement("Human Player Station", "Elevator is designed to load from the human player without a ramp", "man13.png", "Loading.jpg")
+            };
+
+            /*List<Team4001.TeamPage.Achievement> arms = new List<Team4001.TeamPage.Achievement>
+            {
+                new Team4001.TeamPage.Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png", "LEGOTruck.jpg")
+            };
+
+            List<Team4001.TeamPage.Achievement> auto = new List<Team4001.TeamPage.Achievement>
+            {
+                new Team4001.TeamPage.Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png", "LEGOTruck.jpg")
+            };
+            
+            List<Team4001.TeamPage.Achievement> controller = new List<Team4001.TeamPage.Achievement>
+            {
+                new Team4001.TeamPage.Achievement("Jr. FLL Team Support", "Supported and started 15 Jr. FLL Teams at Holy Spirit in Aurora", "lifebuoy2.png", "LEGOTruck.jpg")
+            };*/
+
+            var cell = new DataTemplate(typeof(ImageCell));
+
+            cell.SetBinding(TextCell.TextProperty, "Title");
+            cell.SetBinding(TextCell.DetailProperty, "Details");
+            cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
+
+            ListView elevatorList = new ListView{ ItemsSource = elevator, ItemTemplate = cell };
+
+            elevatorList.ItemSelected += async (sender, e) =>
+            {
+                Team4001.TeamPage.Achievement target = ((Team4001.TeamPage.Achievement)(e.SelectedItem));
+                if (target.Highlight != null)
+                {
+                    elevateImage.Source = target.Highlight;
+                }
+            };
+
             Content = new ScrollView
             { 
                 Content = new StackLayout
@@ -28,8 +68,11 @@ namespace Team4001
                     Children =
                     {
                         new CardView(
-                            new ImageView("IMG_20150305_120103.png"),
+                            elevateImage,
                             new ParagraphView("For this build season, we designed and built a robot to address a very specific strategy to maximimize the size of our tote stacks by maximizing our operational efficiency within a small region of the game field.")
+                        ),
+                        new CardView(
+                            elevatorList
                         ),
                         new CardView(
                             new HeadingView("Recycle Rush Robot Design"),

@@ -230,6 +230,15 @@
     <BundleResource Include="..\..\Videos\Totes.mp4">
       <Link>Resources\Totes.mp4</Link>
     </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\man13.png">
+      <Link>Resources\man13.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Icons\open208.png">
+      <Link>Resources\open208.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\Pictures\Loading.jpg">
+      <Link>Resources\Loading.jpg</Link>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
