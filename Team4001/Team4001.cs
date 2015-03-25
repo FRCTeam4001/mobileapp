@@ -71,7 +71,7 @@ namespace Team4001
                     Title = "Retro Rams"; 
                 }
             );
-            
+
             BackgroundColor = App.Colours.Background; 
 
             Children.Add(new TeamPage()); 
